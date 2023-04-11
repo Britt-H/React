@@ -1,25 +1,22 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import Header from "./Header";
+import WelcomeBack from "./WelcomeBack";
+import Footer from "./Footer";
+import Greeting from "./Greeting"
+import Notifications from "./Notifications"
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <>
+      <Header />
+      <Greeting language = "es"/>
+      <WelcomeBack name="Joe" adjective="sleepy"/>
+      <WelcomeBack name="Anna" adjective="clever"/>
+      <WelcomeBack/>
+      <Notifications notifications={"asdfasdf"}/>
+      <Footer />
+    </>
+    )
 }
 
 export default App;
