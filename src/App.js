@@ -4,6 +4,11 @@ import WelcomeBack from "./WelcomeBack";
 import Footer from "./Footer";
 import Greeting from "./Greeting"
 import Notifications from "./Notifications"
+import List from "./List"
+import React from "react"
+
+
+
 
 function App() {
   return (
@@ -14,6 +19,7 @@ function App() {
       <WelcomeBack name="Anna" adjective="clever"/>
       <WelcomeBack/>
       <Notifications notifications={"asdfasdf"}/>
+      <List />
       <Footer />
     </>
     )
